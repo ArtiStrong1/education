@@ -85,25 +85,60 @@ showMyDB(personalMovieDB.private);
 
            
             
-            function first (){
-                console.log ('1');
-            }
-            function second (){
-                console.log('2'); 
-            }
+            // function first (){
+            //     console.log ('1');
+            // }
+            // function second (){
+            //     console.log('2'); 
+            // }
             
             
 
-            function learnJS(lang, callback){
-               console.log (`Я учу :${lang}`);
-               callback();
-            }
-            function done(){
-                console.log('Я ПРОШЕЛ УРОК!');
-            }
-            learnJS ("JAVASCRIPT",done);
-            
-               
+            // function learnJS(lang, callback){
+            //    console.log (`Я учу :${lang}`);
+            //    callback();
+            // }
+            // function done(){
+            //     console.log('Я ПРОШЕЛ УРОК!');
+            // }
+            // learnJS ("JAVASCRIPT",done);
+
+const option = {
+    name: 'test',
+    width: 1024,
+    height: 1024,
+    colors: {
+        border: 'black',
+        bg: 'red',
+    },
+    makeTest: function (){
+        console.log ('Test');
+    }
+
+};
+
+const {border,bg} = option.colors;
+
+console.log(option);
+option.makeTest();
+
+
+console.log(Object.keys(option).length); 
+let counter = 0;
+for(let key in option){
+  if(typeof(option[key]) === 'object'){
+      for (let i in option[key]){
+          console.log(`Свойство ${i} имеет значение ${option[key] [i]}`);
+          counter++;
+      }
+  }else{console.log (`Свойство ${key} имеет значение ${option[key]} !`);
+  counter++;
+  } 
+}
+console.log(counter);
+
+
+
                
                
     
