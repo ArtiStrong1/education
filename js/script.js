@@ -111,6 +111,9 @@ const option = {
         border: 'black',
         bg: 'red',
     },
+
+
+    
     makeTest: function (){
         console.log ('Test');
     }
