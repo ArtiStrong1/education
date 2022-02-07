@@ -7,7 +7,7 @@ let numberOfFilms;
             }
             
         }
-// start();
+start();
          let personalMovieDB = {
              count:numberOfFilms,
              movies:{},
@@ -26,7 +26,7 @@ function detectMyLevel(){
             alert("ОШИБКА");
         }
         }
-// detectMyLevel();
+detectMyLevel();
 
 function rememberMyFilms() {
     for(let i = 0;i < 2; i++){
@@ -40,7 +40,7 @@ function rememberMyFilms() {
                         }
              }
             }
-// rememberMyFilms();
+rememberMyFilms();
 
 function writeYourGenres (){
     for (let i = 1;i <= 3 ; i++){
@@ -49,7 +49,7 @@ function writeYourGenres (){
     }
     
 } 
-// writeYourGenres ();
+writeYourGenres ();
 
 function showMyDB (hidden){
     if (!hidden) {
