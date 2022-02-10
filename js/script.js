@@ -15,7 +15,7 @@
                }
                
              },
-                rememberMyFilms: function() {
+                rememberMyFilms: () => {
                     for(let i = 0;i < 2; i++){
                         let a = prompt("Последний фильм ?",""),
                             b = prompt("На сколько оцените ?","");
@@ -183,13 +183,7 @@
 // }
 // console.log(counter);
 
-
-
-               
-               
-    
-    
-    
+            //       SWITCH ОПЕРАТОР ! ! ! ! 
     
     
     
@@ -360,3 +354,22 @@
 
 // Object.setPrototypeOf(jonh, soldier);
 // jonh.sayHello();
+ 
+
+
+//         ЗАДАЧКИ ИЗ СОБЕСЕДОВАНИЙ 
+
+// [] + false - null + true       //Добавление в пустой массив дает строку "false" - null = NaN +true = NaN  
+
+// let y = 1;
+// let x = y = 2 ;
+// console.log(x); // 2 Последовательное присваивание ! ! 
+
+// console.log ([] + 1 + 2);  // 12 строка  !!!
+
+// console.log (!!(1 && 3)===(1 && 3)); //  "!!" - 
+
+// const a = [1, 2, 3];
+// const b = [1, 2, 3];
+// console.log (a == b);
+
